@@ -25,7 +25,7 @@
     header.classList.toggle('scrolled', window.scrollY > 10);
     topBtn.classList.toggle('show', window.scrollY > 500);
 
-    const marker = window.scrollY + 150;
+    const marker = window.scrollY + header.offsetHeight + 36;
     let current = sections[0]?.id || 'inicio';
     sections.forEach(section => {
       if (marker >= section.offsetTop) current = section.id;
