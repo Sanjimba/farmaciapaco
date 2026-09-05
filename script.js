@@ -91,11 +91,13 @@
     e.preventDefault();
     const nome = document.getElementById('nome').value.trim();
     const telefone = document.getElementById('telefone').value.trim();
+    const tipoPedido = document.getElementById('tipoPedido').value;
     const mensagem = document.getElementById('mensagem').value.trim();
     const text =
       `Olá, Farmácia Silva Paço!%0A%0A` +
       `Nome: ${nome}%0A` +
       `Telefone: ${telefone}%0A` +
+      `Tipo de pedido: ${tipoPedido}%0A` +
       `Mensagem: ${mensagem}`;
     window.open(`https://wa.me/244935827474?text=${text}`, '_blank', 'noopener');
   });
